@@ -12,12 +12,12 @@ public class MainController {
     @RequestMapping
     public String index()
     {
-        return ("/question/index");
+        return ("/index");
     }
 
     @GetMapping("/login")
     public String login() {
-        return  ("/question/login");
+        return  ("/login");
     }
 
 

@@ -4,14 +4,14 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Quiz</title>
+    <title>QuizPage</title>
 </head>
 <body>
 
 Użytkownik: <b><span sec:authentication="principal.username">User</span></b><br>
 <a href="/"> Powrót do strony głównej</a><br>
-<h1>Quiz</h1>
 
+<h1>Quiz</h1>
 <form method="post" action="${pageContext.request.contextPath}/question/submit">
     <ol type="1">
         <c:forEach var="question" items="${questions}">
