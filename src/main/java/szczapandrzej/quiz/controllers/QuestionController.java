@@ -6,11 +6,11 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 import szczapandrzej.quiz.service.QuestionService;
 
-
 import javax.servlet.http.HttpServletRequest;
+import java.io.IOException;
 
 @Controller
-@RequestMapping("question")
+@RequestMapping("/question")
 public class QuestionController {
 
     @Autowired
@@ -23,7 +23,7 @@ public class QuestionController {
         return "question/questions";
     }
 
-    @RequestMapping(value = "submit", method = RequestMethod.POST)
+    @RequestMapping(value = "/submit", method = RequestMethod.POST)
     public String submit(HttpServletRequest request)
     {
         int score = 0;

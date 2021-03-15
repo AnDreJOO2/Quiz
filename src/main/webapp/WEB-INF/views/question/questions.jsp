@@ -20,7 +20,8 @@ Użytkownik: <b><span sec:authentication="principal.username">User</span></b><br
                 <ol type="a">
                     <c:forEach var="answer" items="${question.answers}">
                         <li>
-                            <input type="radio" name="question_${question.id}" value="${answer.id}">
+                            <input type="radio" name="question_${question.id}" value="${answer.id}"
+                                   required="">
                                 ${answer.content}
                         </li>
                     </c:forEach>
@@ -29,6 +30,7 @@ Użytkownik: <b><span sec:authentication="principal.username">User</span></b><br
         </c:forEach>
     </ol>
     <br>
+    <input type="reset" value="Wyczyść">
     <input type="submit" value="Potwierdź">
 </form>
 

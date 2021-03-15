@@ -13,7 +13,7 @@
     Witaj <b><span sec:authentication="principal.username">User</span></b>
     <br>
     <br>
-    <span id="go">Aby przejść do quizu kliknij tutaj: <a href="/quiz">quiz</a></span>
+    <span id="go">Aby przejść do quizu kliknij tutaj: <a href="/question">quiz</a></span>
     <br>
     <br>
 
