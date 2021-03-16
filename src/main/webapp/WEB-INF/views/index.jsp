@@ -10,8 +10,6 @@
 
 <h1>Index</h1>
 <div class="container">
-    Witaj <b><span sec:authentication="principal.username">User</span></b>
-    <br>
     <br>
     <span id="go">Aby przejść do quizu kliknij tutaj: <a href="/question">quiz</a></span>
     <br>

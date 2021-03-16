@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8"
 %>
+<%@ taglib prefix="security" uri="http://www.springframework.org/security/tags"%>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -8,12 +9,10 @@
 </head>
 <body>
 
-Użytkownik: <b><span sec:authentication="principal.username">User</span></b><br>
+Użytkownik: <b><security:authentication property="principal.username"/></b><br>
 <a href="/"> Powrót do strony głównej</a><br>
 
-<h1>Twój wynik to: </h1>
-Score: ${score}
-
+<h3>Wynik: ${score}/10</h3>
 
 </body>
 
