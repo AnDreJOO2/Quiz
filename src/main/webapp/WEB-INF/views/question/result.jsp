@@ -11,6 +11,7 @@
 
 Użytkownik: <b><security:authentication property="principal.username"/></b><br>
 <a href="/"> Powrót do strony głównej</a><br>
+<a href="${pageContext.request.contextPath}/logout">Wyloguj się</a>
 
 <h3>Wynik: ${score}/10</h3>
 

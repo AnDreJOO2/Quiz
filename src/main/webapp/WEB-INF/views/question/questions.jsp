@@ -11,6 +11,7 @@
 
 Użytkownik: <b><security:authentication property="principal.username"/></b><br>
 <a href="/"> Powrót do strony głównej</a><br>
+<a href="${pageContext.request.contextPath}/logout">Wyloguj się</a>
 
 <h1>Quiz</h1>
 <form method="post" action="${pageContext.request.contextPath}/question/submit">

@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<h1>Index</h1>
+<h1>Strona główna</h1>
 <div class="container">
     <br>
     <span id="go">Aby przejść do quizu kliknij tutaj: <a href="/question">quiz</a></span>
@@ -20,7 +20,7 @@
     <span>Użyte technologie:</span><br>
     <li>java</li>
     <li>spring framework</li>
-    <li>thymeleaf</li>
+    <li>jsp</li>
     <li>mysql</li>
     <li>maven</li>
     <span>Andrzej Szczap s458010</span><br>
